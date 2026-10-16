@@ -75,7 +75,7 @@ public class Main {
         System.out.print("\nDados ANTES de ordenar: ");
         Benchmark.imprimirArray(dados, 10);
 
-        Benchmark.salvarArrayEmArquivo(dados, "dados_antes.txt");
+        Benchmark.salvarArrayEmArquivo(dados, "C:/aps/resultados/dados_antes.txt");
         System.out.println("Listagem completa (ANTES) salva em: dados_antes.txt");
 
         List<AlgoritmoOrdenacao> algoritmos = List.of(

@@ -3,6 +3,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class Benchmark {
+	
+	public static final String PASTA_SAIDA = "saida";
 
     public void testarAlgoritmo(AlgoritmoOrdenacao algoritmo, int[] dados, boolean mostrarPassos) throws IOException {
         String nome = algoritmo.getNome();
@@ -44,7 +46,7 @@ public class Benchmark {
             System.out.println(nome + ": *** ATENCAO *** o vetor NAO ficou ordenado corretamente!");
         }
 
-        String nomeArquivo = "dados_depois_" + nome.toLowerCase().replace(" ", "_") + ".txt";
+        String nomeArquivo = "C:/aps/resultados/dados_depois_" + nome.toLowerCase().replace(" ", "_") + ".txt";
         salvarArrayEmArquivo(dados, nomeArquivo);
         System.out.println("Listagem completa (DEPOIS) salva em: " + nomeArquivo);
     }
